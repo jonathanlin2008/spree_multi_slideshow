@@ -1,12 +1,13 @@
 /*
  *= require store/spree_core
+ *= require store/nivo-slider.css
 */
 
 .gallery {
 	overflow: hidden;
 	z-index:0;
 	color:#fff;
-	background:url(/assets/images/bg-gallery.png) no-repeat 20px 0;
+	background:url(slides/bg-gallery.png) no-repeat 20px 0;
 }
 .gallery .frame {
 	position:relative;
@@ -15,6 +16,8 @@
 	position:absolute;
 	margin:0;
 	padding:0;
+    width: 633px;
+    height: 100%;
 	list-style:none;
 }
 .gallery .frame li {
@@ -45,7 +48,7 @@
 	background-position: 0 -43px;
 }
 .gallery .text-holder {
-	background:url(/assets/images/bg-text02.png) no-repeat;
+	background:url(slides/bg-text02.png) no-repeat;
 	width: 234px;
 	height:98px;
 	padding:45px 0 0 50px;
@@ -58,4 +61,41 @@
 .gallery .text-holder strong span {
 	font-size:52px;
 	display:block;
+}
+
+.slideshow_paper{
+    width: 315px;
+    height: 256px;
+    float: right;
+}
+
+.slideshow_paper a {
+    color: #FFF;
+    background-color: #C60;
+    display: block;
+    font-weight: bold;
+    text-decoration: none;
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 7px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+.slideshow_paper .activeSlide{
+    background-color: #FC0;
+    color: #930;
+}
+
+.thumbnail_current{
+    float: right;
+    clear: both;
+    margin-bottom: 2px;;
+}
+.thumbnail_other{
+    -moz-opacity: 0.5;
+    opacity:.50;
+    filter: alpha(opacity=50);
+    float: right;
+    clear: both;
+    margin-bottom: 2px;;
 }
