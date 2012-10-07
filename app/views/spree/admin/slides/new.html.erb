@@ -1,3 +1,5 @@
+
+<%= javascript_include_tag 'admin/spree_multi_slideshow.js' %>
 <h4><%= t("slideshow_type.slide.new_page") %></h4>
 <%= semantic_form_for [:admin, @slideshow_type, @slide], :html => { :multipart => true } do |f| %>
   <table class="basic-table" data-hook="new_slide">
