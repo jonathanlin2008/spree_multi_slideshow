@@ -1,8 +1,15 @@
 <%= f.inputs do %>
 	<%= f.input :category %>
+    <%= f.input :slide_number %>
+
 	<%= f.input :slide_width %>
 	<%= f.input :slide_height %>
-	<%= f.input :slide_number %>
+    <%= f.input :enable_slide, :as => :boolean %>
+
+    <%= f.input :thumbnail_width %>
+    <%= f.input :thumbnail_height %>
+    <%= f.input :enable_thumbnail, :as => :boolean %>
+
 	<%= f.input :enable_navigation %>
 	<%= f.input :enabled %>
 <% end %>
