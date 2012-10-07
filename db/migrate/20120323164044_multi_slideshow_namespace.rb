@@ -1,6 +1,11 @@
-class MultiSlideshowNamespace < ActiveRecord::Migration
+class AddSlideThumbnails < ActiveRecord::Migration
   def change
-    rename_table :slideshow_types, :spree_slideshow_types
-    rename_table :slides, :spree_slides
+    change_table :spree_slideshow_types do |t|
+      t.boolean :enable_slide, :default => true
+
+      t.integer :thumbnail_width, :default => 200
+      t.integer :thumbnail_height, :default => 80
+      t.boolean :enable_thumbnail, :default => true
+    end
   end
 end
