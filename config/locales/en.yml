@@ -52,11 +52,15 @@ en:
     attributes:
       slideshow_type:
         category: Category
-        enabled: Enable?
-        slide_width: Width
-        slide_height: Height
         slide_number: Slide Number
+        slide_width: Slide width
+        slide_height: Slide height
+        enable_slide: Enable slide
+        thumbnail_width: Thumbnail width
+        thumbnail_height: Thumbnail height
+        enable_thumbnail: Enable thumbnail
         enable_navigation: Next and Prev enable?
+        enabled: Enable?
       slide:
         title: Title
         url: Link to product or taxonomy or to external website
